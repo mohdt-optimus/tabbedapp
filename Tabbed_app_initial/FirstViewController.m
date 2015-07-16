@@ -7,6 +7,7 @@
 //
 
 #import "FirstViewController.h"
+#import "RowTableViewCell.h"
 
 @interface FirstViewController ()
 
@@ -34,18 +35,19 @@
     return [title count];
 }
 
--(UITableViewCell *) tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)path
+-(UITableViewCell *) tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    static NSString *tableidentify=@"SimpleTableCell";
+    static NSString *tableidentify=@"Row";
     
-    UITableViewCell *cell=[tableView dequeueReusableCellWithIdentifier:tableidentify];
+    RowTableViewCell *cell=(RowTableViewCell *)[tableView dequeueReusableCellWithIdentifier:tableidentify];
     
     if(cell==nil)
     {
-        cell=[[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:tableidentify];
+        NSArray *nib=[[NSBundle mainBundle] loadNibNamed:@"Row" owner:self options:nil];
+        cell=[nib objectAtIndex:0];
     }
-    cell.textLabel.text=[title objectAtIndex:path.row];
-    cell.imageView.image=[UIImage imageNamed:[image objectAtIndex:path.row]];
+    cell.label.text=[title objectAtIndex:indexPath.row];
+    cell.thumbnail.image=[UIImage imageNamed:[image objectAtIndex:indexPath.row]];
   
     return cell;
 }

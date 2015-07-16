@@ -30,11 +30,12 @@
 		DBC952AA1B551DF200FBE1E3 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = DBC952A91B551DF200FBE1E3 /* main.m */; };
 		DBC952AD1B551DF200FBE1E3 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DBC952AC1B551DF200FBE1E3 /* AppDelegate.m */; };
 		DBC952B01B551DF200FBE1E3 /* FirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DBC952AF1B551DF200FBE1E3 /* FirstViewController.m */; };
-		DBC952B31B551DF200FBE1E3 /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DBC952B21B551DF200FBE1E3 /* SecondViewController.m */; };
 		DBC952B61B551DF200FBE1E3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DBC952B41B551DF200FBE1E3 /* Main.storyboard */; };
 		DBC952B81B551DF200FBE1E3 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DBC952B71B551DF200FBE1E3 /* Images.xcassets */; };
 		DBC952BB1B551DF200FBE1E3 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = DBC952B91B551DF200FBE1E3 /* LaunchScreen.xib */; };
 		DBC952C71B551DF200FBE1E3 /* Tabbed_app_initialTests.m in Sources */ = {isa = PBXBuildFile; fileRef = DBC952C61B551DF200FBE1E3 /* Tabbed_app_initialTests.m */; };
+		DBF0F8911B575B2C00732B70 /* RowTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = DBF0F8901B575B2C00732B70 /* RowTableViewCell.m */; };
+		DBF0F8A31B577FDC00732B70 /* SecondCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DBF0F8A21B577FDC00732B70 /* SecondCollectionViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -75,14 +76,17 @@
 		DBC952AC1B551DF200FBE1E3 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		DBC952AE1B551DF200FBE1E3 /* FirstViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FirstViewController.h; sourceTree = "<group>"; };
 		DBC952AF1B551DF200FBE1E3 /* FirstViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FirstViewController.m; sourceTree = "<group>"; };
-		DBC952B11B551DF200FBE1E3 /* SecondViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SecondViewController.h; sourceTree = "<group>"; };
-		DBC952B21B551DF200FBE1E3 /* SecondViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SecondViewController.m; sourceTree = "<group>"; };
 		DBC952B51B551DF200FBE1E3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		DBC952B71B551DF200FBE1E3 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		DBC952BA1B551DF200FBE1E3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		DBC952C01B551DF200FBE1E3 /* Tabbed_app_initialTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Tabbed_app_initialTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DBC952C51B551DF200FBE1E3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DBC952C61B551DF200FBE1E3 /* Tabbed_app_initialTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Tabbed_app_initialTests.m; sourceTree = "<group>"; };
+		DBF0F88F1B575B2C00732B70 /* RowTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RowTableViewCell.h; sourceTree = "<group>"; };
+		DBF0F8901B575B2C00732B70 /* RowTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RowTableViewCell.m; sourceTree = "<group>"; };
+		DBF0F8A11B577FDC00732B70 /* SecondCollectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SecondCollectionViewController.h; sourceTree = "<group>"; };
+		DBF0F8A21B577FDC00732B70 /* SecondCollectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SecondCollectionViewController.m; sourceTree = "<group>"; };
+		DBF0F8A41B57851F00732B70 /* Test_CollectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Test_CollectionViewController.h; path = ../../Test_CollectionViewController.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -148,12 +152,15 @@
 				DBC952AC1B551DF200FBE1E3 /* AppDelegate.m */,
 				DBC952AE1B551DF200FBE1E3 /* FirstViewController.h */,
 				DBC952AF1B551DF200FBE1E3 /* FirstViewController.m */,
-				DBC952B11B551DF200FBE1E3 /* SecondViewController.h */,
-				DBC952B21B551DF200FBE1E3 /* SecondViewController.m */,
+				DBF0F88F1B575B2C00732B70 /* RowTableViewCell.h */,
+				DBF0F8901B575B2C00732B70 /* RowTableViewCell.m */,
 				DBC952B41B551DF200FBE1E3 /* Main.storyboard */,
+				DBF0F8A41B57851F00732B70 /* Test_CollectionViewController.h */,
 				DBC952B71B551DF200FBE1E3 /* Images.xcassets */,
 				DBC952B91B551DF200FBE1E3 /* LaunchScreen.xib */,
 				DBC952A71B551DF200FBE1E3 /* Supporting Files */,
+				DBF0F8A11B577FDC00732B70 /* SecondCollectionViewController.h */,
+				DBF0F8A21B577FDC00732B70 /* SecondCollectionViewController.m */,
 			);
 			path = Tabbed_app_initial;
 			sourceTree = "<group>";
@@ -304,7 +311,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DBC952B31B551DF200FBE1E3 /* SecondViewController.m in Sources */,
+				DBF0F8911B575B2C00732B70 /* RowTableViewCell.m in Sources */,
+				DBF0F8A31B577FDC00732B70 /* SecondCollectionViewController.m in Sources */,
 				DBC952AD1B551DF200FBE1E3 /* AppDelegate.m in Sources */,
 				DBC952B01B551DF200FBE1E3 /* FirstViewController.m in Sources */,
 				DBC952AA1B551DF200FBE1E3 /* main.m in Sources */,
