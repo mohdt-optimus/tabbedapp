@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DB2C95CE1B5CC5CA00092A99 /* SeconddetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DB2C95CD1B5CC5CA00092A99 /* SeconddetailViewController.m */; };
 		DB6B760C1B567D7C0021D308 /* 1.png in Resources */ = {isa = PBXBuildFile; fileRef = DB6B75F81B567D7C0021D308 /* 1.png */; };
 		DB6B760D1B567D7C0021D308 /* 2.png in Resources */ = {isa = PBXBuildFile; fileRef = DB6B75F91B567D7C0021D308 /* 2.png */; };
 		DB6B760E1B567D7C0021D308 /* 3.png in Resources */ = {isa = PBXBuildFile; fileRef = DB6B75FA1B567D7C0021D308 /* 3.png */; };
@@ -27,6 +28,7 @@
 		DB6B761D1B567D7C0021D308 /* 18.png in Resources */ = {isa = PBXBuildFile; fileRef = DB6B76091B567D7C0021D308 /* 18.png */; };
 		DB6B761E1B567D7C0021D308 /* 19.png in Resources */ = {isa = PBXBuildFile; fileRef = DB6B760A1B567D7C0021D308 /* 19.png */; };
 		DB6B761F1B567D7C0021D308 /* 20.png in Resources */ = {isa = PBXBuildFile; fileRef = DB6B760B1B567D7C0021D308 /* 20.png */; };
+		DBA2D15D1B5CB95E00AFFCDE /* FirstDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DBA2D15C1B5CB95E00AFFCDE /* FirstDetailViewController.m */; };
 		DBC952AA1B551DF200FBE1E3 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = DBC952A91B551DF200FBE1E3 /* main.m */; };
 		DBC952AD1B551DF200FBE1E3 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DBC952AC1B551DF200FBE1E3 /* AppDelegate.m */; };
 		DBC952B01B551DF200FBE1E3 /* FirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DBC952AF1B551DF200FBE1E3 /* FirstViewController.m */; };
@@ -49,6 +51,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		DB2C95CC1B5CC5CA00092A99 /* SeconddetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SeconddetailViewController.h; sourceTree = "<group>"; };
+		DB2C95CD1B5CC5CA00092A99 /* SeconddetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SeconddetailViewController.m; sourceTree = "<group>"; };
 		DB6B75F81B567D7C0021D308 /* 1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 1.png; sourceTree = "<group>"; };
 		DB6B75F91B567D7C0021D308 /* 2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 2.png; sourceTree = "<group>"; };
 		DB6B75FA1B567D7C0021D308 /* 3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 3.png; sourceTree = "<group>"; };
@@ -69,6 +73,8 @@
 		DB6B76091B567D7C0021D308 /* 18.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 18.png; sourceTree = "<group>"; };
 		DB6B760A1B567D7C0021D308 /* 19.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 19.png; sourceTree = "<group>"; };
 		DB6B760B1B567D7C0021D308 /* 20.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 20.png; sourceTree = "<group>"; };
+		DBA2D15B1B5CB95E00AFFCDE /* FirstDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FirstDetailViewController.h; sourceTree = "<group>"; };
+		DBA2D15C1B5CB95E00AFFCDE /* FirstDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FirstDetailViewController.m; sourceTree = "<group>"; };
 		DBC952A41B551DF200FBE1E3 /* Tabbed_app_initial.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Tabbed_app_initial.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DBC952A81B551DF200FBE1E3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DBC952A91B551DF200FBE1E3 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -154,6 +160,8 @@
 				DBC952AF1B551DF200FBE1E3 /* FirstViewController.m */,
 				DBF0F88F1B575B2C00732B70 /* RowTableViewCell.h */,
 				DBF0F8901B575B2C00732B70 /* RowTableViewCell.m */,
+				DBA2D15B1B5CB95E00AFFCDE /* FirstDetailViewController.h */,
+				DBA2D15C1B5CB95E00AFFCDE /* FirstDetailViewController.m */,
 				DBC952B41B551DF200FBE1E3 /* Main.storyboard */,
 				DBF0F8A41B57851F00732B70 /* Test_CollectionViewController.h */,
 				DBC952B71B551DF200FBE1E3 /* Images.xcassets */,
@@ -161,6 +169,8 @@
 				DBC952A71B551DF200FBE1E3 /* Supporting Files */,
 				DBF0F8A11B577FDC00732B70 /* SecondCollectionViewController.h */,
 				DBF0F8A21B577FDC00732B70 /* SecondCollectionViewController.m */,
+				DB2C95CC1B5CC5CA00092A99 /* SeconddetailViewController.h */,
+				DB2C95CD1B5CC5CA00092A99 /* SeconddetailViewController.m */,
 			);
 			path = Tabbed_app_initial;
 			sourceTree = "<group>";
@@ -315,6 +325,8 @@
 				DBF0F8A31B577FDC00732B70 /* SecondCollectionViewController.m in Sources */,
 				DBC952AD1B551DF200FBE1E3 /* AppDelegate.m in Sources */,
 				DBC952B01B551DF200FBE1E3 /* FirstViewController.m in Sources */,
+				DBA2D15D1B5CB95E00AFFCDE /* FirstDetailViewController.m in Sources */,
+				DB2C95CE1B5CC5CA00092A99 /* SeconddetailViewController.m in Sources */,
 				DBC952AA1B551DF200FBE1E3 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

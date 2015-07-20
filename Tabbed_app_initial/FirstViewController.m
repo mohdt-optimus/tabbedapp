@@ -8,6 +8,7 @@
 
 #import "FirstViewController.h"
 #import "RowTableViewCell.h"
+#import "FirstDetailViewController.h"
 
 @interface FirstViewController ()
 
@@ -51,4 +52,17 @@
   
     return cell;
 }
+
+-(void) prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
+{
+    if ([segue.identifier isEqualToString:@"first"])
+    {
+        
+        NSIndexPath *indexPath = [self.tableView indexPathForSelectedRow];
+        FirstDetailViewController *finalview=segue.destinationViewController;
+        finalview.nameOrg=[title objectAtIndex:indexPath.row];
+        finalview.picOrg=[image objectAtIndex:indexPath.row];
+    }
+}
+
 @end

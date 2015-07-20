@@ -10,4 +10,6 @@
 
 @interface SecondCollectionViewController : UICollectionViewController
 
+@property (weak, nonatomic) IBOutlet UICollectionViewCell *collectionview;
+
 @end

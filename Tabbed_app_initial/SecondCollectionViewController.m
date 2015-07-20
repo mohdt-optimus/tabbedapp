@@ -7,6 +7,7 @@
 //
 
 #import "SecondCollectionViewController.h"
+#import "SeconddetailViewController.h"
 
 @interface SecondCollectionViewController ()
 {
@@ -71,6 +72,17 @@ static NSString * const reuseIdentifier = @"Cell";
     UIImageView *ImageView = (UIImageView *)[cell viewWithTag:100];
     ImageView.image = [UIImage imageNamed:[image objectAtIndex:indexPath.row]];
     return cell;
+}
+
+-(void) prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
+{
+    if ([segue.identifier isEqualToString:@"second"])
+    {
+        NSArray *indexPaths=[self.collectionView indexPathsForSelectedItems];
+        SeconddetailViewController *secondview=segue.destinationViewController;
+        NSIndexPath *path=[indexPaths objectAtIndex:0];
+        secondview.collect=[image objectAtIndex:path.row];
+    }
 }
 
 #pragma mark <UICollectionViewDelegate>

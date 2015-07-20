@@ -1,29 +1,29 @@
 //
-//  ThirdViewController.m
+//  FirstDetailViewController.m
 //  Tabbed_app_initial
 //
-//  Created by optimusmac-12 on 15/07/15.
+//  Created by optimusmac-12 on 20/07/15.
 //  Copyright (c) 2015 mdtaha.optimus. All rights reserved.
 //
 
-#import "ThirdViewController.h"
+#import "FirstDetailViewController.h"
 
-@interface ThirdViewController ()
+@interface FirstDetailViewController ()
 
 @end
 
-@implementation ThirdViewController
-{
-    NSArray *image;
-}
+@implementation FirstDetailViewController
 
+@synthesize name;
+@synthesize nameOrg;
+@synthesize pic;
+@synthesize picOrg;
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
-    
-    image=[NSArray arrayWithObjects:@"1.png",@"2.png",@"3.png",@"4.png",@"5.png",@"6.png",@"7.png",@"8.png",@"9.png",@"10.png",@"11.png",@"12.png",@"13.png",@"14.png",@"15.png",@"16.png",@"17.png",@"18.png",@"19.png",@"20.png", nil];
-    
+    // Do any additional setup after loading the view.
+    name.text=nameOrg;
+    pic.image=[UIImage imageNamed:picOrg];
 }
 
 - (void)didReceiveMemoryWarning {
