@@ -34,6 +34,7 @@ static NSString * const reuseIdentifier = @"Cell";
     [super viewDidLoad];
     
          image=[NSArray arrayWithObjects:@"1.png",@"2.png",@"3.png",@"4.png",@"5.png",@"6.png",@"7.png",@"8.png",@"9.png",@"10.png",@"11.png",@"12.png",@"13.png",@"14.png",@"15.png",@"16.png",@"17.png",@"18.png",@"19.png",@"20.png", nil];
+    //Populating Array of names and images with values which will be shown in application
 }
 
 - (void)didReceiveMemoryWarning {
@@ -70,6 +71,7 @@ static NSString * const reuseIdentifier = @"Cell";
     
     UICollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:identifier forIndexPath:indexPath];
     UIImageView *ImageView = (UIImageView *)[cell viewWithTag:100];
+    //Updating the cllection view with the images
     ImageView.image = [UIImage imageNamed:[image objectAtIndex:indexPath.row]];
     return cell;
 }
@@ -82,6 +84,7 @@ static NSString * const reuseIdentifier = @"Cell";
         SeconddetailViewController *secondview=segue.destinationViewController;
         NSIndexPath *path=[indexPaths objectAtIndex:0];
         secondview.collect=[image objectAtIndex:path.row];
+        //Sending selected image to next view controller to show it in detail form
     }
 }
 

@@ -1,26 +1,22 @@
 //
-//  SeconddetailViewController.m
+//  ViewController.m
 //  Tabbed_app_initial
 //
-//  Created by optimusmac-12 on 20/07/15.
+//  Created by optimusmac-12 on 03/08/15.
 //  Copyright (c) 2015 mdtaha.optimus. All rights reserved.
 //
 
-#import "SeconddetailViewController.h"
+#import "ViewController.h"
 
-@interface SeconddetailViewController ()
+@interface ViewController ()
 
 @end
 
-@implementation SeconddetailViewController
-@synthesize collect;
-@synthesize collectionview;
+@implementation ViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-    collectionview.image=[UIImage imageNamed:collect];
-    //Putting in the value of image element with the value obtained from the segue
 }
 
 - (void)didReceiveMemoryWarning {

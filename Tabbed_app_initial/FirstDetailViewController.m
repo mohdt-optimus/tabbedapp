@@ -22,7 +22,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-    name.text=nameOrg;
+    name.text=nameOrg;                  //Updating the local Element with the value obtained from segue
     pic.image=[UIImage imageNamed:picOrg];
 }
 

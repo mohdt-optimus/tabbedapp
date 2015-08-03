@@ -5,7 +5,7 @@
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
-        <!--First-->
+        <!--First View Controller-->
         <scene sceneID="hNz-n2-bh7">
             <objects>
                 <viewController id="9pv-A4-QxB" customClass="FirstViewController" sceneMemberID="viewController">
@@ -17,7 +17,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="91" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="Flk-de-FJk">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="91" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="Flk-de-FJk">
                                 <rect key="frame" x="0.0" y="20" width="600" height="588"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
@@ -72,14 +72,27 @@
                             <constraint firstItem="Flk-de-FJk" firstAttribute="top" secondItem="Ia1-K6-d13" secondAttribute="bottom" id="lwb-6T-E3u"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="First" image="first" id="acW-dT-cKf"/>
+                    <navigationItem key="navigationItem" id="I0E-Ya-Rne">
+                        <barButtonItem key="rightBarButtonItem" style="plain" id="r49-Pf-v7p">
+                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="gRc-R8-yIh">
+                                <rect key="frame" x="-23" y="-15" width="133" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="About Us">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="w14-Uc-gMG" kind="show" id="okO-Wn-HQl"/>
+                                </connections>
+                            </button>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="tableView" destination="Flk-de-FJk" id="wTK-iT-2Tw"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="W5J-7L-Pyd" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="778" y="-752"/>
+            <point key="canvasLocation" x="1590" y="-752"/>
         </scene>
         <!--First Detail View Controller-->
         <scene sceneID="FPu-MQ-MIn">
@@ -93,24 +106,30 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="iQs-os-rYN">
-                                <rect key="frame" x="81" y="20" width="220" height="227"/>
-                            </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ptH-bC-BYg">
-                                <rect key="frame" x="178" y="281" width="113" height="38"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ptH-bC-BYg">
+                                <rect key="frame" x="191" y="316" width="220" height="38"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="113" id="PrJ-UJ-jHN"/>
+                                    <constraint firstAttribute="height" constant="38" id="GBt-Ss-Ici"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="iQs-os-rYN">
+                                <rect key="frame" x="190" y="81" width="220" height="227"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="220" id="jZG-LY-WP3"/>
+                                </constraints>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="ptH-bC-BYg" firstAttribute="leading" secondItem="CUZ-rJ-X2e" secondAttribute="leadingMargin" constant="-21" id="6Zu-KG-spa"/>
-                            <constraint firstItem="ptH-bC-BYg" firstAttribute="top" secondItem="tDB-J2-ayJ" secondAttribute="bottom" constant="8" symbolic="YES" id="YLd-td-3YN"/>
-                            <constraint firstItem="pzE-aK-e6K" firstAttribute="top" secondItem="ptH-bC-BYg" secondAttribute="bottom" constant="485" id="fQ3-RT-fft"/>
+                            <constraint firstItem="iQs-os-rYN" firstAttribute="trailing" secondItem="ptH-bC-BYg" secondAttribute="trailing" constant="-1" id="3Er-qr-Kps"/>
+                            <constraint firstAttribute="centerX" secondItem="iQs-os-rYN" secondAttribute="centerX" id="Kc7-CM-ibK"/>
+                            <constraint firstItem="ptH-bC-BYg" firstAttribute="top" secondItem="iQs-os-rYN" secondAttribute="bottom" constant="8" id="SQE-8s-DgC"/>
+                            <constraint firstItem="iQs-os-rYN" firstAttribute="top" secondItem="tDB-J2-ayJ" secondAttribute="bottom" constant="17" id="TxL-mC-8c2"/>
+                            <constraint firstAttribute="centerY" secondItem="iQs-os-rYN" secondAttribute="centerY" constant="105.5" id="g3W-Kf-Tyn"/>
+                            <constraint firstItem="ptH-bC-BYg" firstAttribute="leading" secondItem="iQs-os-rYN" secondAttribute="leading" constant="1" id="oTI-wN-Xy5"/>
                         </constraints>
                     </view>
                     <connections>
@@ -120,7 +139,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nfB-et-kTf" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1553" y="-752"/>
+            <point key="canvasLocation" x="1604" y="-1532"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="yl2-sM-qoP">
@@ -133,9 +152,8 @@
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                     </tabBar>
                     <connections>
-                        <segue destination="9pv-A4-QxB" kind="relationship" relationship="viewControllers" id="u7Y-xg-7CH"/>
-                        <segue destination="hRz-DM-wDW" kind="relationship" relationship="viewControllers" id="or7-Ld-OpU"/>
-                        <segue destination="w14-Uc-gMG" kind="relationship" relationship="viewControllers" id="y0A-Tg-LL8"/>
+                        <segue destination="rCh-vm-hiF" kind="relationship" relationship="viewControllers" id="u7Y-xg-7CH"/>
+                        <segue destination="asn-e4-sQz" kind="relationship" relationship="viewControllers" id="or7-Ld-OpU"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HuB-VB-40B" sceneMemberID="firstResponder"/>
@@ -188,11 +206,24 @@
                             <outlet property="delegate" destination="hRz-DM-wDW" id="rlA-bA-7ae"/>
                         </connections>
                     </collectionView>
-                    <tabBarItem key="tabBarItem" title="Item" id="nTF-8A-DGP"/>
+                    <navigationItem key="navigationItem" id="CXh-OP-xd3">
+                        <barButtonItem key="rightBarButtonItem" style="plain" id="KyU-iU-FY0">
+                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="WOo-cT-2eU">
+                                <rect key="frame" x="-23" y="-15" width="133" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="About Us">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="w14-Uc-gMG" kind="show" id="5JZ-l6-RcB"/>
+                                </connections>
+                            </button>
+                        </barButtonItem>
+                    </navigationItem>
                 </collectionViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1Nw-yJ-g58" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="792" y="0.0"/>
+            <point key="canvasLocation" x="1604" y="0.0"/>
         </scene>
         <!--About-->
         <scene sceneID="DWs-jj-PQE">
@@ -206,12 +237,9 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="Rc5-q5-yC8">
-                                <rect key="frame" x="108" y="39" width="385" height="504"/>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="Rc5-q5-yC8">
+                                <rect key="frame" x="16" y="72" width="568" height="471"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="385" id="lMC-uk-gWr"/>
-                                </constraints>
                                 <mutableString key="text">Optimus is designed to help global organizations address their information needs. The world of information is changing and so are the methods of managing it. We provide outsourced technology services to mid-sized organizations who have different needs than Fortune 500 companies. Optimus is designed to meet these specific needs.
 
 The demand for outsourced technology services is increasing as organizations seek to increase their efficiency. This trend has been improved through advancements in technology and telecommunications that now allow outsourcing services to offer seamless services all over the globe.
@@ -227,25 +255,17 @@ Optimus is headquartered in Vancouver, Canada and has delivery centers in Canada
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="Rc5-q5-yC8" firstAttribute="leading" secondItem="hHo-wT-GvJ" secondAttribute="leadingMargin" constant="92" id="54k-y9-NgE"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="Rc5-q5-yC8" secondAttribute="trailing" constant="91" id="6It-zo-gpl"/>
-                            <constraint firstItem="Rc5-q5-yC8" firstAttribute="centerX" secondItem="hHo-wT-GvJ" secondAttribute="centerX" id="CC7-dF-YBZ"/>
-                            <constraint firstAttribute="centerY" secondItem="Rc5-q5-yC8" secondAttribute="centerY" constant="9" id="I3E-JI-O1x"/>
-                            <constraint firstItem="zO9-bl-0WT" firstAttribute="top" secondItem="Rc5-q5-yC8" secondAttribute="bottom" constant="8" id="Lge-HH-Egq"/>
-                            <constraint firstItem="zO9-bl-0WT" firstAttribute="top" secondItem="Rc5-q5-yC8" secondAttribute="bottom" constant="8" id="Mdy-Jf-dni"/>
-                            <constraint firstItem="zO9-bl-0WT" firstAttribute="top" secondItem="Rc5-q5-yC8" secondAttribute="bottom" constant="8" symbolic="YES" id="WiX-4A-9zR"/>
-                            <constraint firstItem="Rc5-q5-yC8" firstAttribute="top" secondItem="Xn2-nu-dd1" secondAttribute="bottom" constant="19" id="dK9-L8-iBW"/>
-                            <constraint firstItem="Rc5-q5-yC8" firstAttribute="leading" secondItem="hHo-wT-GvJ" secondAttribute="leadingMargin" constant="20" id="gVM-7d-P29"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="Rc5-q5-yC8" secondAttribute="trailing" constant="91" id="kzb-QB-7d8"/>
-                            <constraint firstItem="Rc5-q5-yC8" firstAttribute="top" secondItem="Xn2-nu-dd1" secondAttribute="bottom" constant="19" id="qB9-3z-s4B"/>
-                            <constraint firstItem="Rc5-q5-yC8" firstAttribute="top" secondItem="Xn2-nu-dd1" secondAttribute="bottom" constant="19" id="s49-G3-0HC"/>
+                            <constraint firstItem="Rc5-q5-yC8" firstAttribute="leading" secondItem="hHo-wT-GvJ" secondAttribute="leadingMargin" id="CsQ-oE-jZW"/>
+                            <constraint firstItem="zO9-bl-0WT" firstAttribute="top" secondItem="Rc5-q5-yC8" secondAttribute="bottom" constant="8" symbolic="YES" id="Ig9-M9-Hbk"/>
+                            <constraint firstItem="Rc5-q5-yC8" firstAttribute="top" secondItem="Xn2-nu-dd1" secondAttribute="bottom" constant="8" symbolic="YES" id="oRp-Uo-zjA"/>
+                            <constraint firstItem="Rc5-q5-yC8" firstAttribute="trailing" secondItem="hHo-wT-GvJ" secondAttribute="trailingMargin" id="y0n-1H-i2A"/>
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Item" id="ngi-Gi-leg"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9ZC-QA-NhO" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="792" y="772"/>
+            <point key="canvasLocation" x="2421" y="-464"/>
         </scene>
         <!--Seconddetail View Controller-->
         <scene sceneID="2ZT-cC-Dc6">
@@ -259,11 +279,19 @@ Optimus is headquartered in Vancouver, Canada and has delivery centers in Canada
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="VVX-pk-vpc">
-                                <rect key="frame" x="49" y="35" width="292" height="282"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="VVX-pk-vpc">
+                                <rect key="frame" x="154" y="159" width="292" height="282"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="292" id="50i-lR-mAL"/>
+                                </constraints>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="VVX-pk-vpc" firstAttribute="centerX" secondItem="LdP-Zu-Bqk" secondAttribute="centerX" id="2MC-uK-3Kf"/>
+                            <constraint firstItem="VVX-pk-vpc" firstAttribute="top" secondItem="3ed-Gg-D1N" secondAttribute="bottom" constant="95" id="PYc-ch-QBm"/>
+                            <constraint firstItem="VVX-pk-vpc" firstAttribute="centerY" secondItem="LdP-Zu-Bqk" secondAttribute="centerY" id="Pyp-RW-wJl"/>
+                        </constraints>
                     </view>
                     <connections>
                         <outlet property="collectionview" destination="VVX-pk-vpc" id="5Is-dA-wcv"/>
@@ -271,10 +299,51 @@ Optimus is headquartered in Vancouver, Canada and has delivery centers in Canada
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Wlq-HI-qcP" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1553" y="0.0"/>
+            <point key="canvasLocation" x="1596" y="744"/>
+        </scene>
+        <!--Item-->
+        <scene sceneID="Vgd-QD-720">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="asn-e4-sQz" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item" id="nTF-8A-DGP"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="9Wn-Bi-znb">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="hRz-DM-wDW" kind="relationship" relationship="rootViewController" id="j7q-zN-S3J"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ok8-72-uGP" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="792" y="0.0"/>
+        </scene>
+        <!--First-->
+        <scene sceneID="MKl-lk-cpS">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="rCh-vm-hiF" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="First" image="first" id="acW-dT-cKf"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="tWE-23-L2l">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="9pv-A4-QxB" kind="relationship" relationship="rootViewController" id="hki-KN-mQL"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gQx-zZ-3NM" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="778" y="-752"/>
         </scene>
     </scenes>
     <resources>
         <image name="first" width="30" height="30"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="5JZ-l6-RcB"/>
+    </inferredMetricsTieBreakers>
 </document>
